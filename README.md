@@ -1,7 +1,5 @@
 # Salesforce Sample Case Study
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
-
 Use Case: Implement custom Lightning component for:
 1.A lightning component should display a list of Account records which meets the following
 criteria: Industry ="Financial Services" (Note: Add the “Financial Services” picklist value to
