@@ -1,4 +1,4 @@
-public class Account_Records {
+public class AccountRecords {
     
     @AuraEnabled
     public static list<Account> getRecords()

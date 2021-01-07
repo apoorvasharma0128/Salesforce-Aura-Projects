@@ -1,3 +1,17 @@
-<aura:component>
-
-</aura:component>	
+<aura:component controller ="AccountRecords" implements="force:appHostable" access="global" >
+    <aura:attribute name="AccountsList" type="Account[]"/>
+    <aura:attribute name="draftValues" type="Object" default="[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.getAccounts}" />
+    <aura:attribute name="columnsList" type="List"/>
+    <aura:attribute name="sortedBy" type="String" default="Name"/>
+    <aura:attribute name="sortedDirection" type="String" default="asc"/>
+    <lightning:datatable data="{!v.AccountsList}" 
+                         columns="{!v.columnsList}" 
+                         keyField="Id"
+                         hideCheckboxColumn="true"
+                         onsort="{!c.sortReults}"
+                         onsave="{! c.saveRecords }"
+                         sortedBy="{!v.sortedBy}" 
+                         draftValues="{! v.draftValues }"
+                         sortedDirection="{!v.sortedDirection}"/>  
+</aura:component>
