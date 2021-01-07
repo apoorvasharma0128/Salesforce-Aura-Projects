@@ -1,6 +1,18 @@
-# Salesforce DX Project: Next Steps
+# Salesforce Sample Case Study
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+
+Use Case: Implement custom Lightning component for:
+1.A lightning component should display a list of Account records which meets the following
+criteria: Industry ="Financial Services" (Note: Add the “Financial Services” picklist value to
+Industry field in the Account object). The heading of the component should read as ‘Financial
+Services Account Listing’
+2.The list should include the following information for each account record: Account Name,
+Account Owner, Phone, Website, and Annual Revenue.
+3.Ability to sort the data either by Account Name or Account Owner.
+4.Ability to edit a record directly in the component if user has permission to edit that record.
+5.Ability to navigate to the Account detail record page when user clicks the Account Name. The
+record should be opened in a new tab.
 
 ## How Do You Plan to Deploy Your Changes?
 
